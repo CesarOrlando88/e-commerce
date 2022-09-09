@@ -15,7 +15,7 @@ export default function Layout({ title, children }) {
         <header>
           <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <Link href="/">
-              <a className="text-lg font-bold">amazona</a>
+              <a className="text-lg font-bold">ROJOS CDMX</a>
             </Link>
             <div>
               <Link href="/cart">
@@ -29,7 +29,7 @@ export default function Layout({ title, children }) {
         </header>
         <main className="container m-auto mt-4 px-4">{children}</main>
         <footer className="flex h-10 justify-center items-center shadow-inner">
-          <p>Copyright © 2022 Amazona</p>
+          <p>Copyright © 2022 Rojos</p>
         </footer>
       </div>
     </>
