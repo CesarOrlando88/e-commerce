@@ -33,3 +33,6 @@
 9. Update Quanity in the cart
    1. Add select bor for quantity
    2. Handle select box change
+10. Save Cart Items
+   1. install js-cookie package
+   2. save and retreive cart items in cookies
