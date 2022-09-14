@@ -79,10 +79,10 @@ export default function LoginScreen() {
             <div className="text-red-500 ">{errors.password.message}</div>
           )}
         </div>
-        <div className="mb-4 ">
+        <div className="mb-4 decoration-black ">
           <button className="primary-button">Login</button>
         </div>
-        <div className="mb-4 ">
+        <div className="mb-4 text-col">
           Don&apos;t have an account? &nbsp;
           <Link href="register">Register</Link>
         </div>
