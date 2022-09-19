@@ -12,8 +12,8 @@
 ## Run it Locally
 
 ```
-$ git clone https://github.com/basir/next-tailwind-amazona
-$ cd next-tailwind-amazona
+$ git clone https://gitlab.com/XoyDevelopment/rojos-ecommerce.git
+$ cd rojos-ecommerce
 $ npm install
 $ npm run dev
 $ Open http://localhost:3000/api/seed
