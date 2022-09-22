@@ -20,6 +20,7 @@ export default NextAuth({
       return session;
     },
   },
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     CredentialsProvider({
       async authorize(credentials) {
@@ -29,6 +30,7 @@ export default NextAuth({
         });
         await db.disconnect();
         if (user && bcryptjs.compareSync(credentials.password, user.password)) {
+          db.close()
           return {
             _id: user._id,
             name: user.name,
@@ -37,6 +39,7 @@ export default NextAuth({
             isAdmin: user.isAdmin,
           };
         }
+        db.close();
         throw new Error('Invalid email or password');
       },
     }),
