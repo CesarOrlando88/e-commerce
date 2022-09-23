@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext } from 'react';
+import { XCircleIcon } from '@heroicons/react/outline';
 import Layout from '../components/Layout';
 import { Store } from '../utils/Store';
 import { useRouter } from 'next/router';
-import { XCircleIcon } from '@heroicons/react/24/outline';
 import dynamic from 'next/dynamic';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -111,4 +111,5 @@ function CartScreen() {
     </Layout>
   );
 }
-export default dynamic(() => Promise.resolve(CartScreen), { ssr: false }); // Resolve problem of Promise: add env in .eslintrc
+
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
